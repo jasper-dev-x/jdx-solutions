@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const Home = () => {
+export default function Home() {
   return (
     <main className='flex flex-col pt-[10vh] px-5'>
       <div className='flex flex-col'>
@@ -10,8 +10,8 @@ export const Home = () => {
         </h1>
         <p className='mb-3'>
           Unveil the story behind our journey from New York&apos;s inception to
-          Florida&apos;s success. Explore our mobile and web app innovations, custom
-          software solutions, and unparalleled contract work.
+          Florida&apos;s success. Explore our mobile and web app innovations,
+          custom software solutions, and unparalleled contract work.
         </p>
 
         <Link
@@ -22,6 +22,4 @@ export const Home = () => {
       </div>
     </main>
   );
-};
-
-export default Home;
+}

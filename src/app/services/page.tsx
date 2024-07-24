@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const Services = () => {
+export default function Services() {
   return (
     <main className='flex flex-col'>
       <h1 className='text-3xl font-bold text-center mb-5'>Services</h1>
@@ -12,7 +12,7 @@ export const Services = () => {
         applications, custom software solutions, or contract work, JDX Solutions
         has you covered.
       </p>
-      <p className="mb-3">
+      <p className='mb-3'>
         <span className='text-2xl'>J</span>oin the ranks of successful
         businesses that have entrusted us with their digital transformation
         journey. Elevate your online presence with JDX Solutions - where
@@ -26,6 +26,4 @@ export const Services = () => {
       </Link>
     </main>
   );
-};
-
-export default Services;
+}

@@ -55,7 +55,7 @@ export default function Contact() {
 
     if (formValidState.email == true && formValidState.name == true)
       setFormState;
-  }, [formState]);
+  }, [formState, formValidState.email, formValidState.name]);
 
   return (
     <main className='flex flex-col'>

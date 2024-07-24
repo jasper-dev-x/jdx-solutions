@@ -44,7 +44,7 @@ export const FormInput = ({
     if (isValid == 0 || readOnly) setRingColor(defaultRing);
     else if (isValid == 1) setRingColor(validRing);
     else setRingColor(notValidRing);
-  }, [value, isValid]);
+  }, [value, isValid, readOnly]);
 
   if (type === "textarea")
     return (
