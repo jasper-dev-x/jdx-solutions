@@ -9,8 +9,8 @@ export const Home = () => {
           innovation in every line of code.
         </h1>
         <p className='mb-3'>
-          Unveil the story behind our journey from New York's inception to
-          Florida's success. Explore our mobile and web app innovations, custom
+          Unveil the story behind our journey from New York&apos;s inception to
+          Florida&apos;s success. Explore our mobile and web app innovations, custom
           software solutions, and unparalleled contract work.
         </p>
 

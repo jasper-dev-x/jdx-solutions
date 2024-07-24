@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const About = () => {
+export default function About() {
   return (
     <main className='flex flex-col'>
       <h1 className='text-3xl font-bold text-center mb-5'>About</h1>
@@ -12,12 +12,12 @@ export const About = () => {
         hands specialize in creating bespoke software solutions and undertaking
         contract work with finesse.
       </p>
-      <p className="mb-3">
+      <p className='mb-3'>
         <span className='text-2xl'>L</span>et your online narrative resonate
         with professionalism and authenticity. Your story is not just part of
-        the web, it's what sets you apart from the vast digital landscape. Take
-        pride in your voice, for it is the melody that will make this journey
-        unforgettable.
+        the web, it&apos;s what sets you apart from the vast digital landscape.
+        Take pride in your voice, for it is the melody that will make this
+        journey unforgettable.
       </p>
 
       <Link
@@ -27,6 +27,4 @@ export const About = () => {
       </Link>
     </main>
   );
-};
-
-export default About;
+}

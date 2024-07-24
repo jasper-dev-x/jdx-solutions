@@ -8,7 +8,7 @@ export const Services = () => {
       <p className='mb-5'>
         <span className='text-2xl'>E</span>mbrace innovation with JDX Solutions.
         Explore our cutting-edge software offerings which are meticulously
-        crafted to meet your every need. Whether it's mobile or web
+        crafted to meet your every need. Whether it&apos;s mobile or web
         applications, custom software solutions, or contract work, JDX Solutions
         has you covered.
       </p>

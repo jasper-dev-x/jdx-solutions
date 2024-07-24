@@ -2,9 +2,9 @@
 
 import {FormEvent, useEffect, useState} from "react";
 import {FormInput} from "../components/FormInput";
-import {DisplayNameValidator, EmailValidator} from "@/state/dev_utils";
+import {EmailValidator} from "@/state/dev_utils";
 import {Radio, RadioGroup} from "@headlessui/react";
-import {IoCheckmarkCircle, IoCheckmarkCircleOutline} from "react-icons/io5";
+import {IoCheckmarkCircle} from "react-icons/io5";
 
 const subjects = [
   {
@@ -21,7 +21,7 @@ const subjects = [
   },
 ];
 
-export const Contact = () => {
+export default function Contact() {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -62,8 +62,8 @@ export const Contact = () => {
       <h1 className='text-3xl font-bold text-center mb-5'>Get in Touch</h1>
       <h3 className='text-xl text-center'>What can we do for you?</h3>
       <p className='mb-5 text-center'>
-        Provide your details and we'll reach out promptly. We're eager to
-        connect with you!
+        Provide your details and we&apos;ll reach out promptly. We&apos;re eager
+        to connect with you!
       </p>
 
       <form
@@ -133,6 +133,4 @@ export const Contact = () => {
       </form>
     </main>
   );
-};
-
-export default Contact;
+}
