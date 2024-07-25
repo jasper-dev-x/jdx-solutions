@@ -58,7 +58,7 @@ export default function Contact() {
   }, [formState, formValidState.email, formValidState.name]);
 
   return (
-    <main className='flex flex-col'>
+    <main className='flex flex-col max-w-3xl'>
       <h1 className='text-3xl font-bold text-center mb-5'>Get in Touch</h1>
       <h3 className='text-xl text-center'>What can we do for you?</h3>
       <p className='mb-5 text-center'>
@@ -118,7 +118,7 @@ export default function Contact() {
         {/* MESSAGE */}
         <FormInput
           label='Message'
-          placeholder='Any notes for us?'
+          placeholder='What can we do for you?'
           type='textarea'
           value={formState.message}
           setValue={(x: string) => setFormState({...formState, message: x})}
@@ -127,7 +127,7 @@ export default function Contact() {
         {/* SUBMIT */}
         <button
           type='submit'
-          className='flex self-start rounded-md bg-gray-100/20 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-gray-200/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:text-black'>
+          className='rounded-full text-center bg-gray-100/20 mt-10 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-gray-200/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:text-black'>
           Compose Email
         </button>
       </form>

@@ -25,9 +25,7 @@ export default function RootLayout({
           " gradient-background text-gray-100 min-h-dvh w-[100dwh] pb-[20dvh]"
         }>
         <NavBar />
-        <div className='flex justify-center pt-[7.5vh] mx-5'>
-          <div className='max-w-3xl'>{children}</div>
-        </div>
+        <div className='flex justify-center pt-[7.5vh] mx-5'>{children}</div>
       </body>
     </html>
   );

@@ -36,9 +36,9 @@ export const NavBar = () => {
           {links.map((link) => (
             <MenuItem key={link.href}>
               <Link
-                className={"block my-2"}
+                className={"block my-3"}
                 href={link.href}>
-                <span className='text-black'>{link.label}</span>
+                <span className='text-black font-bold'>{link.label}</span>
               </Link>
             </MenuItem>
           ))}
