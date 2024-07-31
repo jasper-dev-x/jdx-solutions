@@ -5,19 +5,22 @@ import {FormInput} from "../components/FormInput";
 import {EmailValidator} from "@/state/dev_utils";
 import {Radio, RadioGroup} from "@headlessui/react";
 import {IoCheckmarkCircle} from "react-icons/io5";
+import Footer from "../components/Footer";
 
 const subjects = [
   {
-    name: "Collaborate",
-    shortDesc: "I have an idea we can work on, let's connect!",
+    name: "Empower my Business",
+    shortDesc: "Utilize one of the JDX solutions for my business",
   },
   {
-    name: "Custom Solution",
-    shortDesc: "I need a website, web app and/or mobile app.",
+    name: "Collaborate on a Custom Solution",
+    shortDesc:
+      "Tailor a JDX Solution for my business OR Transform my vision into reality",
   },
   {
-    name: "Other Assistance Needed",
-    shortDesc: "Please explain your needs in the 'Message' section.",
+    name: "Explore our Advanced Services",
+    shortDesc:
+      "Need assistance on a current project or require other IT services? Let's connect!",
   },
 ];
 
@@ -25,7 +28,7 @@ export default function Contact() {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
-    subject: "Collaborate",
+    subject: "Empower my Business",
     message: "",
   });
   const [formValidState, setFormValidState] = useState({
@@ -38,7 +41,10 @@ export default function Contact() {
     x.preventDefault();
     if (formValidState.email == true && formValidState.name == true)
       window.open(
-        `mailto:${formState.email}?subject=${formState.subject}&body=${formState.message}`
+        String.raw`mailto:${formState.email}?
+        subject=${formState.subject}
+        &body=Hey I'm ${formState.name}
+        ${formState.message}`
       );
     else
       alert(
@@ -58,7 +64,7 @@ export default function Contact() {
   }, [formState, formValidState.email, formValidState.name]);
 
   return (
-    <main className='flex flex-col max-w-3xl'>
+    <main className='flex flex-col max-w-3xl mx-5'>
       <h1 className='text-3xl font-bold text-center mb-5'>Get in Touch</h1>
       <h3 className='text-xl text-center'>What can we do for you?</h3>
       <p className='mb-5 text-center'>
@@ -131,6 +137,8 @@ export default function Contact() {
           Compose Email
         </button>
       </form>
+
+      <Footer />
     </main>
   );
 }

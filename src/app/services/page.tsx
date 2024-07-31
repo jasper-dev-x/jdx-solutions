@@ -1,9 +1,8 @@
-import Link from "next/link";
 import Footer from "../components/Footer";
 
 export default function Services() {
   return (
-    <main className='flex flex-col max-w-3xl'>
+    <main className='flex flex-col max-w-3xl mx-5'>
       <div className='h-[90dvh]'>
         <h1 className='text-3xl font-bold text-center mb-5'>Services</h1>
         <p className='mb-5'>
@@ -23,7 +22,7 @@ export default function Services() {
 
       {/* FOOTER */}
       <Footer
-        title='Explore our innovative solutions'
+        title='Uncover the power of cutting-edge technology'
         btnLabel='Contact Us'
         route='/contact'
       />

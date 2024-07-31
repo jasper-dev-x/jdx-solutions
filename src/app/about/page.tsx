@@ -1,10 +1,9 @@
-import Link from "next/link";
 import Footer from "../components/Footer";
 
 export default function About() {
   return (
     <main className='flex flex-col max-w-3xl'>
-      <div className='h-[90dvh]'>
+      <div className='h-[90dvh] mx-5'>
         <h1 className='text-3xl font-bold text-center mb-5'>About</h1>
 
         <p className='mb-5'>
@@ -26,7 +25,7 @@ export default function About() {
       {/* FOOTER */}
       <Footer
         title='Empower Your Business'
-        btnLabel='Our Services'
+        btnLabel='Explore Our Solutions'
         route='/services'
       />
     </main>
