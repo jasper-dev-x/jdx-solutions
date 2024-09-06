@@ -4,20 +4,19 @@ import ServiceCard from "./components/ServiceCard";
 
 const services = [
   {
-    title: "Empower my Business",
-    shortDesc: "Utilize one of the JDX solutions for my business",
+    title: "Browse Our Solutions",
+    shortDesc: "Browse JDX solutions on the App Store",
     img: "",
   },
   {
     title: "Collaborate on a Custom Solution",
-    shortDesc:
-      "Tailor a JDX Solution for my business OR Transform my vision into reality",
+    shortDesc: "Transform your vision into reality",
     img: "",
   },
   {
-    title: "Explore our Advanced Services",
+    title: "IT & Network Services",
     shortDesc:
-      "Need assistance on a current project or require other IT services? Let's connect!",
+      "Need assistance on setting up an office or having issues with a current setup? Let's connect!",
     img: "",
   },
 ];
