@@ -43,7 +43,7 @@ export default function Home() {
         <div className='flex flex-col max-w-3xl min-h-[94dvh]'>
           <h1 className='text-4xl mb-5'>Welcome to JDX Solutions</h1>
 
-          <div className='flex flex-col gap-6'>
+          <div className='flex flex-col items-center gap-6'>
             {services.map(({title, shortDesc, img}, index) => (
               <ServiceCard
                 key={index}

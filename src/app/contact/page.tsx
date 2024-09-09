@@ -10,17 +10,18 @@ import Footer from "../components/Footer";
 const subjects = [
   {
     name: "Empower my Business",
-    shortDesc: "Utilize one of the JDX solutions for my business",
-  },
-  {
-    name: "Collaborate on a Custom Solution",
     shortDesc:
       "Tailor a JDX Solution for my business OR Transform my vision into reality",
   },
   {
-    name: "Explore our Advanced Services",
+    name: "Consult with JDX",
     shortDesc:
-      "Need assistance on a current project or require other IT services? Let's connect!",
+      "Not sure what you're looking for? Let's connect.",
+  },
+  {
+    name: "Explore Other Services",
+    shortDesc:
+      "Need assistance on a current project or require other IT services? We got you!",
   },
 ];
 
