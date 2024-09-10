@@ -54,7 +54,7 @@ export default function Portfolio() {
       {customMadeList.map((x, index) => (
         <div
           key={index}
-          className='flex flex-col min-h-[80dvh] max-w-[66dvh] items-center text-center'>
+          className='flex flex-col min-h-[80vh] max-w-[66vh] items-center text-center'>
           <h1 className='text-2xl font-bold'>{x.type}</h1>
           <h3 className='text-xl mb-3'>{x.company}</h3>
           <h6 className='font-serif mb-10'>{x.desc}</h6>

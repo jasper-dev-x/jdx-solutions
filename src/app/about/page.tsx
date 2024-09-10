@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 export default function About() {
   return (
     <main className='flex flex-col max-w-3xl'>
-      <div className='h-[90dvh] mx-5'>
+      <div className='h-[90vh] mx-5'>
         <h1 className='text-3xl font-bold text-center mb-5'>About</h1>
 
         <p className='mb-5'>

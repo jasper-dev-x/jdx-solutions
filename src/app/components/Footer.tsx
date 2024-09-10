@@ -10,7 +10,7 @@ export default function Footer({
   route?: string;
 }) {
   return (
-    <div className='flex flex-col centered h-[66dvh] gap-4 pb-10'>
+    <div className='flex flex-col centered h-[66vh] gap-4 pb-10 '>
       <h1 className='text-4xl text-center'>{title}</h1>
       {route ? (
         <Link

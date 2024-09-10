@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export default function Services() {
   return (
     <main className='flex flex-col max-w-3xl mx-5'>
-      <div className='h-[80dvh]'>
+      <div className='h-[80vh]'>
         <h1 className='text-3xl font-bold text-center mb-5'>Services</h1>
         <p className='mb-5'>
           <span className='text-2xl'>E</span>mbrace innovation with JDX
