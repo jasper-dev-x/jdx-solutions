@@ -36,7 +36,7 @@ export default function Home() {
           <Link
             href='/about'
             className='flex rounded-full bg-gray-100/20 px-6 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-gray-200/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:text-black'>
-            See what we're about
+            See what we&apos;re about
           </Link>
         </div>
       </div>

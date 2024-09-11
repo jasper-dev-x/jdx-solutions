@@ -1,5 +1,6 @@
 import {logoSlyLynx} from "@/state/dev_utils";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
 const customMadeList = [
   {
@@ -39,8 +40,9 @@ export default function Portfolio() {
       </div>
       {/* SLY LYNX  */}
       <div className='flex flex-col items-center'>
-        <img
+        <Image
           src={logoSlyLynx}
+          alt='...'
           className='rounded-xl mb-5'
           width={100}
         />
@@ -59,10 +61,11 @@ export default function Portfolio() {
           <h3 className='text-xl mb-3'>{x.company}</h3>
           <h6 className='font-serif mb-10'>{x.desc}</h6>
           {x.imgs.map((img, imgIndex) => (
-            <img
+            <Image
               key={imgIndex}
               className='md-max-w-sm rounded-md mb-5 object-contain'
               src={img}
+              alt="..."
             />
           ))}
           <hr className='my-10 w-full' />
