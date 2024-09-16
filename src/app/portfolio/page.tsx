@@ -1,5 +1,9 @@
+"use client";
+
 import {logoSlyLynx} from "@/state/dev_utils";
 import Footer from "../components/Footer";
+import Image from "next/image";
+import {useEffect, useState} from "react";
 
 const customMadeList = [
   {
@@ -31,6 +35,24 @@ const customMadeList = [
 ];
 
 export default function Portfolio() {
+  const [innerWidth, setInnerWidth] = useState(0);
+
+  useEffect(() => {
+    // Function to update the innerWidth state
+    function handleResize() {
+      setInnerWidth(window.innerWidth);
+    }
+
+    // Set the initial innerWidth value
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <main className='flex flex-col text-center mx-5'>
       <div className='mb-10'>
@@ -39,10 +61,11 @@ export default function Portfolio() {
       </div>
       {/* SLY LYNX  */}
       <div className='flex flex-col items-center'>
-        <img
+        <Image
           src={logoSlyLynx}
           alt='...'
           className='rounded-xl mb-5'
+          height={100}
           width={100}
         />
         <h2 className='text-xl font-bold'>Sly Lynx</h2>
@@ -60,11 +83,13 @@ export default function Portfolio() {
           <h3 className='text-xl mb-3'>{x.company}</h3>
           <h6 className='font-serif mb-10'>{x.desc}</h6>
           {x.imgs.map((img, imgIndex) => (
-            <img
+            <Image
               key={imgIndex}
               className='md-max-w-sm rounded-md mb-5 object-contain'
               src={img}
               alt='...'
+              height={800}
+              width={innerWidth * 0.9}
             />
           ))}
           <hr className='my-10 w-full' />
