@@ -1,20 +1,5 @@
 import Link from "next/link";
 import Footer from "./components/Footer";
-import ServiceCard from "./components/ServiceCard";
-
-const services = [
-  {
-    title: "Browse",
-    shortDesc:
-      "Head over to our portfolio to discover our client-driven projects",
-    link: "/portfolio",
-  },
-  {
-    title: "Collaborate",
-    shortDesc: "Let's turn your vision into reality",
-    link: "/contact",
-  },
-];
 
 export default function Home() {
   return (

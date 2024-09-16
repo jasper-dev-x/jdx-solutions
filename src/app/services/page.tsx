@@ -1,6 +1,10 @@
 import Footer from "../components/Footer";
 
-
+export const services = [
+  {title: "", shortDesc: [""]},
+  {title: "", shortDesc: [""]},
+  {title: "", shortDesc: [""]},
+];
 
 export default function Services() {
   return (
@@ -8,11 +12,11 @@ export default function Services() {
       <div className='h-[80vh]'>
         <h1 className='text-3xl font-bold text-center mb-5'>Services</h1>
         <p className='mb-5'>
-          <span className='text-2xl'>E</span>mbrace innovation with JDX
-          Solutions. Explore our cutting-edge software offerings which are
-          meticulously crafted to meet your every need. Whether it&apos;s mobile
-          or web applications, custom software solutions, or even contract IT
-          work, JDX Solutions has you covered.
+          <span className='text-2xl'>E</span>mbrace innovation and creativity
+          with JDX Solutions. Explore our meticulously crafted software
+          offerings to meet your every need. Whether it&apos;s mobile or web
+          applications, custom software solutions, or even contract IT work, JDX
+          Solutions has you covered.
         </p>
         <p className=''>
           <span className='text-2xl'>J</span>oin the ranks of successful
@@ -21,7 +25,7 @@ export default function Services() {
           expertise meets excellence.
         </p>
       </div>
-   
+
       {/* FOOTER */}
       <Footer
         title='Uncover the power of cutting-edge technology'

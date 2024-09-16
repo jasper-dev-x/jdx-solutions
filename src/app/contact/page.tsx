@@ -11,15 +11,15 @@ const subjects = [
   {
     name: "Empower my Business",
     shortDesc:
-      "Tailor a JDX Solution for my business OR Transform my vision into reality",
+      "Tailor one of our solutions for your business OR Transform your software vision into reality",
   },
   {
-    name: "Consult with JDX",
+    name: "Book a Photoshoot",
     shortDesc:
-      "Not sure what you're looking for? Let's connect.",
+      "Have a creative idea or need headshots for your business? Let's Collaborate!",
   },
   {
-    name: "Explore Other Services",
+    name: "Explore Other Tech Services",
     shortDesc:
       "Need assistance on a current project or require other IT services? We got you!",
   },

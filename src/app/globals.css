@@ -2,15 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-primary {
+  background-color: #c20000;
+}
+
+.txt-primary {
+  color: #c20000;
+}
+
 .centered {
   justify-content: center;
   align-items: center;
 }
 
 .gradient-background {
-  background: linear-gradient(160deg, #c20000 ,#000000, #000000);
+  background: linear-gradient(160deg, #c20000, #000000, #000000);
   background-size: 300% 150%;
-  animation: gradient-animation 14s ease infinite alternate;
+  animation: gradient-animation 8s ease infinite alternate;
 }
 
 @keyframes gradient-animation {

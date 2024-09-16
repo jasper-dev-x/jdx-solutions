@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
 
-export async function redirects() {
-  return [
+export const images = {
+  formats: ["image/avif", "image/webp"],
+  remotePatterns: [
     {
-      source: "/:path*",
-      has: [{type: "host", value: "https://www.jdx.solutions"}],
-      destination: "https://jdx.solutions/:path*",
-      permanent: true,
+      protocol: "https",
+      hostname: "firebasestorage.googleapis.com",
     },
-  ];
-}
-
+  ],
+};
