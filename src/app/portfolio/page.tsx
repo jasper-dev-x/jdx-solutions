@@ -36,20 +36,16 @@ const customMadeList = [
 
 export default function Portfolio() {
   const [innerWidth, setInnerWidth] = useState(0);
+  const [hidePhotos, setHidePhotos] = useState(true);
 
+  // INNER WIDTH GETTER
   useEffect(() => {
-    // Function to update the innerWidth state
-    function handleResize() {
-      setInnerWidth(window.innerWidth);
-    }
-
-    // Set the initial innerWidth value
+    const handleResize = () => setInnerWidth(window.innerWidth);
     handleResize();
-
-    // Add event listener for window resize
     window.addEventListener("resize", handleResize);
 
-    // Cleanup the event listener on component unmount
+    setTimeout(() => setHidePhotos(false), 3500);
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -61,20 +57,37 @@ export default function Portfolio() {
       </div>
       {/* SLY LYNX  */}
       <div className='flex flex-col items-center'>
-        <Image
-          src={logoSlyLynx}
-          alt='...'
-          className='rounded-xl mb-5'
-          height={100}
-          width={100}
-        />
+        {hidePhotos ? (
+          <div
+            className='rounded-xl mb-5 animate-pulse'
+            style={{
+              borderColor: "#000000",
+              borderWidth: 3,
+              height: 100,
+              width: 100,
+            }}
+          />
+        ) : (
+          <Image
+            src={logoSlyLynx}
+            alt='...'
+            className='rounded-xl mb-5'
+            style={{
+              borderColor: "#000000",
+              borderWidth: 2,
+            }}
+            height={100}
+            width={100}
+          />
+        )}
+
         <h2 className='text-xl font-bold'>Sly Lynx</h2>
-        <h3>A Sly Business Card</h3>
+        <h3 className='mb-3'>A Sly Business Card</h3>
         <h6>Coming soon to the App Store</h6>
       </div>
       <hr className='my-10' />
 
-      {/* PEBBLE CREEK TESTIMONY */}
+      {/* TESTIMONIES */}
       {customMadeList.map((x, index) => (
         <div
           key={index}
@@ -82,30 +95,34 @@ export default function Portfolio() {
           <h1 className='text-2xl font-bold'>{x.type}</h1>
           <h3 className='text-xl mb-3'>{x.company}</h3>
           <h6 className='font-serif mb-10'>{x.desc}</h6>
-          {x.imgs.map((img, imgIndex) => (
-            <Image
-              key={imgIndex}
-              className='md-max-w-sm rounded-md mb-5 object-contain'
-              src={img}
-              alt='...'
-              height={800}
-              width={innerWidth * 0.9}
-            />
-          ))}
+          {x.imgs.map((img, imgIndex) =>
+            hidePhotos ? (
+              <div
+                className='md-max-w-sm rounded-md mb-5  animate-pulse'
+                style={{
+                  borderColor: "#C20000",
+                  borderWidth: 2,
+                  height: innerWidth * 0.9 * 0.5617,
+                  width: innerWidth * 0.9,
+                }}></div>
+            ) : (
+              <Image
+                key={imgIndex}
+                src={img}
+                alt='...'
+                className='md-max-w-sm rounded-md mb-5 object-contain'
+                style={{
+                  borderColor: "#C20000",
+                  borderWidth: 2,
+                }}
+                height={800}
+                width={innerWidth * 0.9}
+              />
+            )
+          )}
           <hr className='my-10 w-full' />
         </div>
       ))}
-
-      {/* COMPRA */}
-      {/* <div className='flex flex-col items-center py-10'>
-        <img
-          src={logoCompra}
-          width={100}
-          className='rounded-xl mb-5'
-        />
-        <h2 className='text-xl font-bold'>Compra</h2>
-        <h2>Shopping List for Roommates</h2>
-      </div> */}
 
       <Footer
         title='Interested?'
