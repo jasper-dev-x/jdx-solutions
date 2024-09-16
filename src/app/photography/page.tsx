@@ -20,7 +20,7 @@ const galleries = [
 export default function Photography() {
   return (
     <main className='flex flex-col max-w-3xl mx-5'>
-      <div className='min-h-[60vh]'>
+      <div className='mb-[12.5vh]'>
         <h1 className='text-3xl font-bold text-center mb-5'>Photography</h1>
         <p className='mb-5'>
           <span className='text-2xl'>M</span>y passion for capturing moments
