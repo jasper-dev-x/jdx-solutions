@@ -98,6 +98,7 @@ export default function Portfolio() {
           {x.imgs.map((img, imgIndex) =>
             hidePhotos ? (
               <div
+                key={imgIndex}
                 className='md-max-w-sm rounded-md mb-5  animate-pulse'
                 style={{
                   borderColor: "#C20000",
