@@ -1,22 +1,19 @@
 import Footer from "../components/Footer";
 import InfoCard from "../components/InfoCard";
 
-export const galleries = [
+const galleries = [
   {
     title: "Portrait",
     link: "https://drive.google.com/drive/folders/1NdfhTzhMLq180L1AI7wXXdM1ySsB4sXy?usp=sharing",
-    shortDesc: "",
   },
   {
     title: "Sports",
     link: "https://drive.google.com/drive/folders/1DBNrJ3k5R6v2Y4XrB4Q9v5sRRM4ux6b8?usp=sharing",
-    shortDesc: "",
   },
 
   {
     title: "Landscape/Misc",
     link: "https://drive.google.com/drive/folders/12lmMVMIa0M1S3ENuEI1tPlSkfmFRcREh?usp=sharing",
-    shortDesc: "",
   },
 ];
 

@@ -3,20 +3,20 @@
 import {Menu, MenuButton, MenuItem, MenuItems} from "@headlessui/react";
 import Link from "next/link";
 import {Fragment, useState} from "react";
-import {IoClose, IoMenu} from "react-icons/io5";
+import {IoMenu} from "react-icons/io5";
 import LOGO from "../icon.png";
 import Image from "next/image";
 
+const links = [
+  {href: "/about", label: "About Us"},
+  {href: "/services", label: "Our Services"},
+  {href: "/portfolio", label: "Tech Portfolio"},
+  {href: "/photography", label: "Photography"},
+  {href: "/contact", label: "Contact Us"},
+];
+
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const links = [
-    {href: "/about", label: "About Us"},
-    {href: "/services", label: "Our Services"},
-    {href: "/portfolio", label: "Tech Portfolio"},
-    {href: "/photography", label: "Photography"},
-    {href: "/contact", label: "Contact Us"},
-  ];
 
   return (
     <div className='navbar flex w-full justify-between p-3 sticky top-0 bg-gray-200 text-black'>

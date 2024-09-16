@@ -1,6 +1,6 @@
 import Footer from "../components/Footer";
 
-export const services = [
+const services = [
   {title: "", shortDesc: [""]},
   {title: "", shortDesc: [""]},
   {title: "", shortDesc: [""]},
