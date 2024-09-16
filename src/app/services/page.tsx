@@ -1,9 +1,10 @@
 import Footer from "../components/Footer";
 
 const services = [
-  {title: "", shortDesc: [""]},
-  {title: "", shortDesc: [""]},
-  {title: "", shortDesc: [""]},
+  {title: "Mobile App", shortDesc: [""]},
+  {title: "Website", shortDesc: [""]},
+  {title: "Photoshoot", shortDesc: [""]},
+  {title: "Contract IT service", shortDesc: [""]},
 ];
 
 export default function Services() {
@@ -11,13 +12,18 @@ export default function Services() {
     <main className='flex flex-col max-w-3xl mx-5'>
       <div className='h-[80vh]'>
         <h1 className='text-3xl font-bold text-center mb-5'>Services</h1>
-        <p className='mb-5'>
+        <p className=''>
           <span className='text-2xl'>E</span>mbrace innovation and creativity
-          with JDX Solutions. Explore our meticulously crafted software
-          offerings to meet your every need. Whether it&apos;s mobile or web
-          applications, custom software solutions, or even contract IT work, JDX
-          Solutions has you covered.
+          with JDX Solutions. Whether it&apos;s a:
         </p>
+        <ul className='flex flex-col items-center my-5 gap-1'>
+          {services.map((x, index) => (
+            <li key={index}>♠︎ {x.title} ♠︎</li>
+          ))}
+        </ul>
+        <h3 className='text-center font-bold text-xl mb-5'>
+          JDX Solutions has you covered
+        </h3>
         <p className=''>
           <span className='text-2xl'>J</span>oin the ranks of successful
           businesses that have entrusted us with their digital transformation
