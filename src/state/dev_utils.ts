@@ -1,7 +1,7 @@
 import {ILynxType} from "./schemas";
 
 export const logoSlyLynx =
-  "https://firebasestorage.googleapis.com/v0/b/jdx-sly-lynx.appspot.com/o/assets%2Fsly-lynx-icon.jpg?alt=media&token=48fb3c53-112c-4eb4-ad4a-586fcb0bb24e";
+  "https://firebasestorage.googleapis.com/v0/b/jdx-sly-lynx.appspot.com/o/assets%2Fsly-lynx-trans.png?alt=media&token=e7a922bf-448c-4e08-bd60-72867a988c5f";
 
 export const logoCompra =
   "https://firebasestorage.googleapis.com/v0/b/jdx-compra.appspot.com/o/appLogo.png?alt=media&token=0bb8b38d-0887-46d5-9ff5-653470d3ce47";

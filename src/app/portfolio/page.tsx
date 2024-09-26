@@ -61,7 +61,8 @@ export default function Portfolio() {
           <div
             className='rounded-xl mb-5 animate-pulse'
             style={{
-              borderColor: "#000000",
+              borderColor: "#2E8B57",
+              backgroundColor: "#C0C0C0",
               borderWidth: 3,
               height: 100,
               width: 100,
@@ -73,7 +74,8 @@ export default function Portfolio() {
             alt='...'
             className='rounded-xl mb-5'
             style={{
-              borderColor: "#000000",
+              borderColor: "#2E8B57",
+              backgroundColor: "#C0C0C0",
               borderWidth: 2,
             }}
             height={100}
