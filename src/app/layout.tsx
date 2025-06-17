@@ -30,10 +30,10 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          " gradient-background text-gray-100 min-h-vh w-[100dwh]"
+          " gradient-background text-gray-100 w-[100dwh]"
         }>
         <NavBar />
-        <div className='flex justify-center pt-[7.5vh]'>{children}</div>
+        <div className='flex justify-center'>{children}</div>
       </body>
     </html>
   );

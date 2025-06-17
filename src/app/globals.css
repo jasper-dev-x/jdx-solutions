@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "daisyui";
 
 .bg-primary {
   background-color: #c20000;
@@ -16,7 +15,15 @@
 }
 
 .gradient-background {
-  background: linear-gradient(160deg, #c20000, #000000, #000000);
+  background: linear-gradient(
+    160deg,
+    #ffffff,
+    #afafaf,
+    #c20000,
+    #c20000,
+    #000000,
+    #000000
+  );
   background-size: 300% 150%;
   animation: gradient-animation 8s ease infinite alternate;
 }

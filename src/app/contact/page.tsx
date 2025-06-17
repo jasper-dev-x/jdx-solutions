@@ -3,8 +3,6 @@
 import {FormEvent, useEffect, useState} from "react";
 import {FormInput} from "../components/FormInput";
 import {EmailValidator} from "@/state/dev_utils";
-import {Radio, RadioGroup} from "@headlessui/react";
-import {IoCheckmarkCircle} from "react-icons/io5";
 import Footer from "../components/Footer";
 
 const subjects = [
@@ -79,7 +77,7 @@ export default function Contact() {
         {/* SUBJECT */}
         <div className='w-full px-4'>
           <div className='mx-auto w-full max-w-md my-5'>
-            <RadioGroup
+            {/* <RadioGroup
               value={formState.subject}
               onChange={(x) => setFormState({...formState, subject: x})}
               aria-label='Email Subject'
@@ -100,7 +98,7 @@ export default function Contact() {
                   </div>
                 </Radio>
               ))}
-            </RadioGroup>
+            </RadioGroup> */}
           </div>
         </div>
 
