@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className='flex flex-col w-full'>
       {/* HEADER */}
-      <div className='flex flex-col max-w-3xl h-[90vh] px-5'>
+      <div className='flex flex-col max-w-3xl h-[90vh] px-5 pt-5'>
         <h1 className='text-4xl'>
           Where cutting-edge technology meets innovation in every line of code.
         </h1>

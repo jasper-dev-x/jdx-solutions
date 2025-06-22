@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import {Fragment, useState} from "react";
 import {IoMenu} from "react-icons/io5";
 import LOGO from "../icon.png";
 import Image from "next/image";
@@ -15,8 +14,6 @@ const links = [
 ];
 
 export const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className='glass flex w-full justify-between p-3 sticky top-0  text-black z-40'>
       <Link

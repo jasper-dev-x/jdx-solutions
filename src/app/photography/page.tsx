@@ -1,10 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Footer from "../components/Footer";
 import {Hero} from "../components/Hero";
 import Link from "next/link";
-import LOGO from "../jasper-visions-logo.png";
-import Image from "next/image";
 
 export default function Photography() {
   const tempGallery = [0, 0, 0, 0, 0, 0];
@@ -20,27 +19,18 @@ export default function Photography() {
     const carousel = document.querySelector("#gallery-carousel");
 
     const href = btn.getAttribute("href")!;
-    const target = carousel?.querySelector<HTMLDivElement>(href)!;
-    const left = target.offsetLeft;
+    const target = carousel?.querySelector<HTMLDivElement>(href) ?? null;
+    const left = target?.offsetLeft;
     carousel?.scrollTo({left});
   };
 
   return (
     <main className='flex flex-col w-full'>
-      {/* JASPER VISIONS LOGO */}
-      <div className='flex centered'>
-        <Image
-          className='object-contain max-h-[300px]'
-          src={LOGO}
-          alt='...'
-        />
-      </div>
-
       {/* GALLERY CAROUSEL */}
       <Hero className='items-start'>
         <div
           id='gallery-carousel'
-          className='carousel w-full aspect-square'>
+          className='carousel w-full aspect-square h-[75dvh] max-w-[90dvw]'>
           {/* CAROUSEL SLIDES */}
           {tempGallery.map((x, index) => (
             <div
@@ -48,8 +38,9 @@ export default function Photography() {
               id={`slide${index}`}
               className='carousel-item relative w-full'>
               {/* GALLERY COVER IMG */}
-              <img
+              <Image
                 src='https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp'
+                alt='...'
                 className='object-contain bg-gray-50/10 p-3 w-full'
               />
 

@@ -42,3 +42,10 @@ export interface ILynxType {
   nativeURL?: string;
   iconURL?: string;
 }
+
+export interface IDrive {
+  id?: string;
+  name: string;
+  accessCode: string;
+  link: string;
+}

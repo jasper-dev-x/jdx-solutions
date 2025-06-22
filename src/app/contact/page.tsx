@@ -5,24 +5,6 @@ import {FormInput} from "../components/FormInput";
 import {EmailValidator} from "@/state/dev_utils";
 import Footer from "../components/Footer";
 
-const subjects = [
-  {
-    name: "Empower my Business",
-    shortDesc:
-      "Tailor one of our solutions for your business OR Transform your software vision into reality",
-  },
-  {
-    name: "Book a Photoshoot",
-    shortDesc:
-      "Have a creative idea or need headshots for your business? Let's Collaborate!",
-  },
-  {
-    name: "Explore Other Tech Services",
-    shortDesc:
-      "Need assistance on a current project or require other IT services? We got you!",
-  },
-];
-
 export default function Contact() {
   const [formState, setFormState] = useState({
     name: "",
@@ -57,9 +39,6 @@ export default function Contact() {
       name: formState.name.length >= 3,
     };
     setFormValidState(valState);
-
-    if (formValidState.email == true && formValidState.name == true)
-      setFormState;
   }, [formState, formValidState.email, formValidState.name]);
 
   return (

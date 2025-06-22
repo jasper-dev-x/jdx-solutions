@@ -10,7 +10,7 @@ export const FormInput = ({
   label = "",
   subLabel = "",
   value,
-  setValue = () => {},
+  setValue,
   isValid = 0,
   placeholder = "",
   limit,
@@ -22,8 +22,8 @@ export const FormInput = ({
   type?: string;
   label?: string;
   subLabel?: string;
-  value?: any;
-  setValue?: Function;
+  value?: string;
+  setValue?: (x: string) => void;
   isValid?: number;
   placeholder?: string;
   limit?: number;
@@ -36,7 +36,7 @@ export const FormInput = ({
 
   // ON CHANGE
   const onChange = (input: string) => {
-    if ((limit && input?.length <= limit) || !limit) setValue(input);
+    if ((limit && input?.length <= limit) || !limit) setValue!(input);
   };
 
   // VALIDATION WATCHER

@@ -178,11 +178,11 @@ export const convertRGBtoHex: (rgb: string | null) => string = (
   rgb: string | null
 ) => {
   if (rgb != null) {
-    let res = rgb
+    const res = rgb
       .split(";")
       .map((x) => {
-        let A = Math.floor(parseInt(x) / 16);
-        let B = parseInt(x) % 16;
+        const A = Math.floor(parseInt(x) / 16);
+        const B = parseInt(x) % 16;
         return `${convertAlpha(A)}${convertAlpha(B)}`;
       })
       .join("");
@@ -198,7 +198,7 @@ export const useWhiteForeground: (rgb: string | undefined) => boolean = (
   if (rgb == null) return false;
   const rgbList = rgb.split(";").map((x) => (x != "0" ? parseInt(x) : 0));
 
-  let val = Math.sqrt(
+  const val = Math.sqrt(
     Math.pow(rgbList[0], 2) * 0.299 +
       Math.pow(rgbList[1], 2) * 0.587 +
       Math.pow(rgbList[2], 2) * 0.114
@@ -208,7 +208,7 @@ export const useWhiteForeground: (rgb: string | undefined) => boolean = (
 };
 
 export const convertTimeFromInt: (x: string) => string = (x: string) => {
-  let hh = parseInt(x);
+  const hh = parseInt(x);
 
   return hh == 0
     ? "12am"
